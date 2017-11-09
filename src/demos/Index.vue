@@ -12,8 +12,8 @@
             <ul class="is-left">
                 <li :class="{'is-active':index===0}" @click="change(0)"><a>简介</a></li>
                 <li :class="{'is-active':index===1}" @click="change(1)"><a>布局</a></li>
-                <li :class="{'is-active':index===2}" @click="change(2)"><a>全局</a></li>
-                <li :class="{'is-active':index===3}" @click="change(3)"><a>缓存</a></li>
+                <li :class="{'is-active':index===2}" @click="change(2)"><a>组件</a></li>
+                <li :class="{'is-active':index===3}" @click="change(3)"><a>其它</a></li>
             </ul>
         </div>
         <div class="tabs-content-container">
@@ -102,6 +102,42 @@
                             <div class="content">
                                 <p class="title">Tall tile</p>
                                 <p class="subtitle">With even more content</p>
+                                <div class="content">
+                                    
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <!--组件-->
+            <div class="fade" v-show="index===2">
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-normal">
+                            <div class="content">
+                                <p class="title">全局组件</p>
+                                <p class="subtitle">Modal, Toast, Preloader</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nostrum necessitatibus, ut id eum maiores dolores porro eius numquam quasi iure commodi, possimus vel corporis, enim, odit perspiciatis minima sapiente.</p>
+                                <div class="content">
+                                    
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <!--其它-->
+            <div class="fade" v-show="index===3">
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-normal">
+                            <div class="content">
+                                <p class="title">其它</p>
+                                <p class="subtitle">其它副标题</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, excepturi, quae! Ut iusto corporis et porro, laudantium aspernatur velit. Voluptatem obcaecati dolores aperiam. Odio reprehenderit quas, ratione eum consequatur atque.</p>
                                 <div class="content">
                                     
                                 </div>
