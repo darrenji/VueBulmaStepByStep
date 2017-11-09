@@ -10,7 +10,9 @@
                 <router-view></router-view>
             </div>
         </section>
+        <login v-if="!isAuth" class="is-active"></login>
     </section>
+    
 </template>
 
 
