@@ -13,6 +13,7 @@ import Index from './demos/Index'
 import App from './App'
 
 // components
+import Buttons from './demos/Buttons'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -144,6 +145,10 @@ const routes = [
   {
     path: '/',
     component: Index
+  },
+  {
+    path: '/buttons',
+    component: Buttons
   }
 ]
 
