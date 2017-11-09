@@ -1,1 +1,2 @@
-# src/components/xscroll/*.js
+src/components/xscroll/*.js
+**/*.vue

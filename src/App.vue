@@ -1,3 +1,6 @@
+/* eslint-disable */
+   
+
 <template>
     <section id="app-container">
         <xheader></xheader>
