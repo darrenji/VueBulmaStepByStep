@@ -3,8 +3,8 @@
 
 <template>
     <section id="app-container">
-        <xheader></xheader>
-        <section class="page">
+        <xheader v-if="isAuth"></xheader>
+        <section class="page" v-if="isAuth">>
             <nav-menu></nav-menu>
             <div class="page-container">
                 <router-view></router-view>
@@ -18,6 +18,7 @@
     import Xheader from './components/header'
     import { Toast, Modal } from './components/modal'
     import { NavMenu, Login } from './components/page'
+    import store from './store'
     export default {
       components: {
         NavMenu,
@@ -25,6 +26,52 @@
         Modal,
         Toast,
         Xheader
+      },
+      store: store,
+      data () {
+          return {
+              modalinfo: {
+                  mode: 'after',
+                  title: '',
+                  content: '',
+                  callback: null
+              }
+          }
+      },
+      computed: {
+          isModal () {
+              return this.$store.getters.getModal
+          },
+          isAuth () {
+              return this.$store.getters.getIsAuth
+          },
+          toastArray () {
+              return this.$store.getters.getToast
+          },
+          preloaderShow() {
+              return this.$store.getters.getPreloader
+          }
+      },
+      methods: {
+          showModal (mode, title, content, width, ok, cancel) {
+              this.$set(this.modalinfo, 'mode', mode)
+              this.$set(this.modalinfo, 'title', title)
+              this.$set(this.modalinfo, 'content', content)
+              this.$set(this.modalinfo, 'width', width)
+              this.$set(this.modalinfo, 'ok', ok)
+              this.$set(this.modalinfo, 'cancel', cancel)
+              store.commit('modal', true)
+          },
+          closeModal () {
+              store.commit('modal', false)
+          }
+      },
+      mounted () {
+          let ico = require('./asserts/images/vueico.png')
+          let icon = require('./asserts/images/vuelogo.png')
+          
+          document.getElementById('linkIcon').href = ico;
+          document.getElementById('linkAppIcon').href = icon
       }
     }
 </script>
