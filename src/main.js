@@ -28,6 +28,7 @@ import Panel from './demos/Panel'
 import Table from './demos/Table'
 import Tab from './demos/Tabs'
 import Tag from './demos/Tag'
+import Title from './demos/Title'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -219,6 +220,10 @@ const routes = [
   {
     path: '/tags',
     component: Tag
+  },
+  {
+    path: '/title',
+    component: Title
   }
 ]
 
