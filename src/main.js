@@ -15,6 +15,7 @@ import App from './App'
 // components
 import Buttons from './demos/Buttons'
 import Card from './demos/Card'
+import Content from './demos/Content'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -154,6 +155,10 @@ const routes = [
   {
     path: '/card',
     component: Card
+  },
+  {
+    path: '/content',
+    component: Content
   }
 ]
 

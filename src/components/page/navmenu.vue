@@ -98,7 +98,7 @@
                                 sub: [
                                     {title: 'Buttons', url: '/buttons'},
                                     {title: 'Card', url: '/card'},
-                                    {title: 'Content', url: './Content'},
+                                    {title: 'Content', url: './content'},
                                     {title: 'Form', url: '/form'},
                                     {title: 'Icons', url: '/icons'},
                                     {title: 'Image', url: '/image'},
