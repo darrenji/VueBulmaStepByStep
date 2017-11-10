@@ -19,6 +19,7 @@ import Content from './demos/Content'
 import Form from './demos/Form'
 import Icon from './demos/Icon'
 import Image from './demos/Image'
+import Level from './demos/Level'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -174,6 +175,10 @@ const routes = [
   {
     path: '/image',
     component: Image
+  },
+  {
+    path: '/level',
+    component: Level
   }
 ]
 
