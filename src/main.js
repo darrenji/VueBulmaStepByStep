@@ -31,6 +31,7 @@ import Tag from './demos/Tag'
 import Title from './demos/Title'
 import Ajax from './demos/Ajax'
 import Chart from './demos/Chart'
+import Collapse from './demos/Collapse'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -234,6 +235,10 @@ const routes = [
   {
     path: '/charts',
     component: Chart
+  },
+  {
+    path: '/collapse',
+    component: Collapse
   }
 ]
 
