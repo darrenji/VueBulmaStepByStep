@@ -24,6 +24,7 @@ import MediaObject from './demos/MediaObject'
 import Message from  './demos/Message'
 import Nav from './demos/Nav'
 import Notification from  './demos/Notification'
+import Panel from './demos/Panel'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -199,6 +200,10 @@ const routes = [
   {
     path: '/notifications',
     component: Notification
+  },
+  {
+    path: '/panel',
+    component: Panel
   }
 ]
 
