@@ -20,6 +20,7 @@ import Form from './demos/Form'
 import Icon from './demos/Icon'
 import Image from './demos/Image'
 import Level from './demos/Level'
+import MediaObject from './demos/MediaObject'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -179,6 +180,10 @@ const routes = [
   {
     path: '/level',
     component: Level
+  },
+  {
+    path: '/mediaobject',
+    component: MediaObject
   }
 ]
 
