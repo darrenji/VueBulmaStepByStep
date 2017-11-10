@@ -30,6 +30,7 @@ import Tab from './demos/Tabs'
 import Tag from './demos/Tag'
 import Title from './demos/Title'
 import Ajax from './demos/Ajax'
+import Chart from './demos/Chart'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -229,6 +230,10 @@ const routes = [
   {
     path: '/ajax',
     component: Ajax
+  },
+  {
+    path: '/charts',
+    component: Chart
   }
 ]
 
