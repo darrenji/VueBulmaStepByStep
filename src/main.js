@@ -27,6 +27,7 @@ import Notification from  './demos/Notification'
 import Panel from './demos/Panel'
 import Table from './demos/Table'
 import Tab from './demos/Tabs'
+import Tag from './demos/Tag'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -214,6 +215,10 @@ const routes = [
   {
     path: '/tabs',
     component: Tab
+  },
+  {
+    path: '/tags',
+    component: Tag
   }
 ]
 
