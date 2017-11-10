@@ -25,6 +25,8 @@ import Message from  './demos/Message'
 import Nav from './demos/Nav'
 import Notification from  './demos/Notification'
 import Panel from './demos/Panel'
+import Table from './demos/Table'
+import Tab from './demos/Tabs'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -204,6 +206,14 @@ const routes = [
   {
     path: '/panel',
     component: Panel
+  },
+  {
+    path: '/table',
+    component: Table
+  },
+  {
+    path: '/tabs',
+    component: Tab
   }
 ]
 
