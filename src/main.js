@@ -22,6 +22,7 @@ import Image from './demos/Image'
 import Level from './demos/Level'
 import MediaObject from './demos/MediaObject'
 import Message from  './demos/Message'
+import Nav from './demos/Nav'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -189,6 +190,10 @@ const routes = [
   {
     path: '/message',
     component: Message
+  },
+  {
+    path: '/nav',
+    component: Nav
   }
 ]
 
