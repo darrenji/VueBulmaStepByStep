@@ -29,6 +29,7 @@ import Table from './demos/Table'
 import Tab from './demos/Tabs'
 import Tag from './demos/Tag'
 import Title from './demos/Title'
+import Ajax from './demos/Ajax'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -224,6 +225,10 @@ const routes = [
   {
     path: '/title',
     component: Title
+  },
+  {
+    path: '/ajax',
+    component: Ajax
   }
 ]
 
