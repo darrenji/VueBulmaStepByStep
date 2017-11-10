@@ -18,6 +18,7 @@ import Card from './demos/Card'
 import Content from './demos/Content'
 import Form from './demos/Form'
 import Icon from './demos/Icon'
+import Image from './demos/Image'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -169,6 +170,10 @@ const routes = [
   {
     path: '/icons',
     component: Icon
+  },
+  {
+    path: '/image',
+    component: Image
   }
 ]
 
