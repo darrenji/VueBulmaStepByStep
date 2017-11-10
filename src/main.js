@@ -23,6 +23,7 @@ import Level from './demos/Level'
 import MediaObject from './demos/MediaObject'
 import Message from  './demos/Message'
 import Nav from './demos/Nav'
+import Notification from  './demos/Notification'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -194,6 +195,10 @@ const routes = [
   {
     path: '/nav',
     component: Nav
+  },
+  {
+    path: '/notifications',
+    component: Notification
   }
 ]
 
