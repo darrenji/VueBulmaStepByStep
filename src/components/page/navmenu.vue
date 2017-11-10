@@ -104,7 +104,7 @@
                                     {title: 'Image', url: '/image'},
                                     {title: 'Level', url: '/level'},
                                     {title: 'MediaObject', url: '/mediaobject'},
-                                    {title: 'Message', url: '/mediaobject'},
+                                    {title: 'Message', url: '/message'},
                                     {title: 'Nav', url: '/nav'},
                                     {title: 'Notifications', url: '/notifications'},
                                     {title: 'Panel', url: '/panel'},
