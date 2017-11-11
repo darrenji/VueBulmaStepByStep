@@ -32,6 +32,7 @@ import Title from './demos/Title'
 import Ajax from './demos/Ajax'
 import Chart from './demos/Chart'
 import Collapse from './demos/Collapse'
+import Modal from './demos/Modal'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -239,6 +240,10 @@ const routes = [
   {
     path: '/collapse',
     component: Collapse
+  },
+  {
+    path: '/modal',
+    component: Modal
   }
 ]
 

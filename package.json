@@ -15,7 +15,9 @@
     "babel-runtime": "^6.11.6",
     "eslint-plugin-promise": "^2.0.1",
     "sinon": "^1.17.7",
-    "vue": "^2.0.3"
+    "sweet-modal-vue": "^2.0.0",
+    "vue": "^2.0.3",
+    "vue-bulma-modal": "^1.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.16.0",
